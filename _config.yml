@@ -1,8 +1,7 @@
 # Site settings
 title: Colin Marshall - Web Developer
 email: colin.michael.marshall@gmail.com
-description: > # My name is Colin Marshall and I'm a web developer. Welcome to my blog! 
-			# Here I will discuss projects I'm working on, and technologies I'm learning about.
+description: "My name is Colin Marshall and I'm a web developer. Welcome to my blog! Here I will discuss projects I'm working on, and technologies I'm learning about."
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://colinmarshall.net" # the base hostname & protocol for your site
 twitter_username: djcoma
@@ -11,3 +10,6 @@ github_username:  colin-marshall
 # Build settings
 markdown: kramdown
 permalink: /:title
+
+# Post settings
+excerpt_separator: <!--more-->
