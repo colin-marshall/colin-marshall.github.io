@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Why I Chose Jekyll For This Blog"
+title:  "Why I Chose Jekyll Over WordPress For This Blog"
 date:   2015-07-26 13:16:09
 image: jekyll-logo.png
 author: Colin Marshall

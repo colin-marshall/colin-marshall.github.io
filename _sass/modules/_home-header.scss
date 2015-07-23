@@ -11,7 +11,14 @@
 		display: none;
 	}
 
-	@include e(text) {
+	@include e(name) {
+		display:none;
+		font-size: 3rem;
+		font-weight: 500;
+		color: white;
+	}
+
+		@include e(title) {
 		display:none;
 		font-size: 3rem;
 		font-weight: 500;
