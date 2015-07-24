@@ -5,14 +5,28 @@
 	text-align: center;
 
 	@include e(logo) {
-		max-width: 200px;
-		padding-top: 1rem;
-		margin: 0 auto;
 		display: none;
+		height: 0;
+		width: 0;
+		max-width: 200px;
+		padding: 1rem 0;
+		margin: 0 auto;
+		-webkit-transform: rotate(.1deg);
+  		-ms-transform: rotate(.1deg);
+  		transform: rotate(.1deg);
+  		transition: transform 1s, height 2s, width 2s;
+
+  		@include m(flip) {
+  			-webkit-transform: rotate(-359.9deg);
+  			-ms-transform: rotate(-359.9deg);
+  			transform: rotate(-359.9deg);
+  			height: 200px;
+  			width: 200px;
+  		}
 	}
 
 	@include e(name) {
-		display:none;
+		display: none;
 		font-size: 3rem;
 		font-weight: 500;
 		color: white;
@@ -20,8 +34,9 @@
 
 		@include e(title) {
 		display:none;
-		font-size: 3rem;
+		font-size: 2rem;
 		font-weight: 500;
 		color: white;
+		line-height: 1;
 	}
 }
