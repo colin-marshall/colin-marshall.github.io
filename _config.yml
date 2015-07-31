@@ -10,6 +10,10 @@ github_username:  colin-marshall
 # Build settings
 markdown: kramdown
 permalink: /:title
+exclude: ['css', '_sass', 'node_modules', 'bower_components']
+keep_files: ['_site/css']
 
 # Post settings
 excerpt_separator: <!--more-->
+
+
