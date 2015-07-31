@@ -1,0 +1,22 @@
+{
+  "name": "colin-marshall-blog",
+  "version": "0.0.0",
+  "homepage": "https://github.com/colin-marshall/colin-marshall.github.io",
+  "authors": [
+    "colin-marshall <colin.michael.marshall@gmail.com>"
+  ],
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5"
+  }
+}
