@@ -3,6 +3,7 @@ var browserSync = require('browser-sync');
 var cp          = require('child_process');
 var bower       = require('gulp-bower');
 var sass        = require('gulp-sass');
+var deploy      = require('gulp-gh-pages');
 
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -64,6 +65,15 @@ gulp.task('bower', function() { 
     return bower()
          .pipe(gulp.dest(config.bowerDir)) 
 });
+
+/**
+ * Push build to gh-pages
+ */
+gulp.task('deploy', function () {
+  return gulp.src("./_site/**/*")
+    .pipe(deploy())
+});
+
 
 /**
  * Watch html/md files, run jekyll & reload BrowserSync

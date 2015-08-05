@@ -5,6 +5,7 @@
     "browser-sync": "^2.2.0",
     "gulp": "^3.7",
     "gulp-bower": "0.0.10",
+    "gulp-gh-pages": "^0.5.2",
     "gulp-sass": "^2.0.4"
   }
 }
