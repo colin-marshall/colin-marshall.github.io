@@ -1,6 +1,9 @@
 ### Jekyll ###
 .sass-cache
 
+### gulp-gh-pages ###
+.publish
+
 
 ### Node ###
 # Logs

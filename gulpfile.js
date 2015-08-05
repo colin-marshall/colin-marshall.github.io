@@ -67,11 +67,13 @@ gulp.task('bower', function() { 
 });
 
 /**
- * Push build to gh-pages
+ * Push build to GitHub Pages
  */
 gulp.task('deploy', function () {
   return gulp.src("./_site/**/*")
-    .pipe(deploy())
+    .pipe(deploy({
+        branch: 'master'
+    }));
 });
 
 
