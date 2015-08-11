@@ -5,8 +5,8 @@
     <description>My name is Colin Marshall and I&#39;m a web developer. Welcome to my blog! Here I will discuss projects I&#39;m working on, and technologies I&#39;m learning about.</description>
     <link>http://colinmarshall.net/</link>
     <atom:link href="http://colinmarshall.net/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 04 Aug 2015 18:02:06 -0600</pubDate>
-    <lastBuildDate>Tue, 04 Aug 2015 18:02:06 -0600</lastBuildDate>
+    <pubDate>Tue, 11 Aug 2015 17:44:18 -0600</pubDate>
+    <lastBuildDate>Tue, 11 Aug 2015 17:44:18 -0600</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -15,6 +15,25 @@
 &lt;!--more--&gt;&lt;/p&gt;
 
 &lt;p&gt;Since I already have something WordPress related that will be in my portfolio, I figured that I could kill two birds with one stone and create a blog that demonstrates my ability to use a different framework and add it to my portfolio.&lt;/p&gt;
+
+&lt;h2 id=&quot;jekyll-uses-markdown-syntax&quot;&gt;Jekyll Uses Markdown Syntax&lt;/h2&gt;
+
+&lt;p&gt;In &lt;strong&gt;WordPress&lt;/strong&gt;, I find the Visual Editor to be a real pain, and I never use it. More often than not I end up with tags in the wrong places, or tags will randomly appear in the source that I never put there in the first place.&lt;/p&gt;
+
+&lt;p&gt;The Text Editor in WordPress is a little better for me since I can control the HTML directly, but writing HTML in the Text Editor is nothing like writing HTML in an application like &lt;a href=&quot;http://www.sublimetext.com/&quot;&gt;Sublime Text&lt;/a&gt;. Out-of-the-box,the WordPress Text Editor does not have syntax highlighting, and it doesn’t allow you to use tab indentation. Writing HTML without tab indentation is a pretty terrible experience that I recommend be avoided like the plague. Of course you could always use spaces in place of tabs, but that gets tedious to me.&lt;/p&gt;
+
+&lt;p&gt;I have been using the &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt; syntax for a couple years now on the &lt;a href=&quot;https://teamtreehouse.com/forum/&quot;&gt;Team Treehouse Forum&lt;/a&gt;, and more recently on &lt;a href=&quot;http://stackoverflow.com/&quot;&gt;Stack Overflow&lt;/a&gt;. I have found that &lt;strong&gt;Markdown&lt;/strong&gt; lets me write more efficiently than raw HTML.&lt;/p&gt;
+
+&lt;h2 id=&quot;jekyll-sites-are-static&quot;&gt;Jekyll Sites Are Static&lt;/h2&gt;
+
+&lt;h2 id=&quot;jekyll-forces-me-to-use-the-command-line&quot;&gt;Jekyll Forces Me To Use The Command Line&lt;/h2&gt;
+
+&lt;p&gt;My first introduction to the command line was when I was around 5 years old. My Dad taught me how to use MS-DOS to play games on our IBM desktop computer. So I have known how to use the command line about as long as I have known how to read and write. That being said, moving in and out of directories and executing programs was about the extent that I used the command line back then. As Windows evolved I used it less and less.&lt;/p&gt;
+
+&lt;p&gt;Since I have been learning web development over the past few years I have started to use the command line again, and it has become the centerpiece of my development workflow. I now prefer to use CLI tools (e.g. &lt;a href=&quot;https://git-scm.com/&quot;&gt;Git&lt;/a&gt;, &lt;a href=&quot;http://gulpjs.com/&quot;&gt;Gulp&lt;/a&gt;, &lt;a href=&quot;https://www.vagrantup.com/&quot;&gt;Vagrant&lt;/a&gt;, etc.) in place of GUI tools (e.g. CodeKit, Mixture, MAMP, etc.) because using the command line gives me a greater understanding of what’s going on “under the hood.” Jekyll uses the command line to build and serve your blog during development, so I was naturally attracted to it.&lt;/p&gt;
+
+&lt;h2 id=&quot;github-pages-work-great-with-jekyll&quot;&gt;GitHub Pages Work Great With Jekyll&lt;/h2&gt;
+
 </description>
         <pubDate>Sun, 26 Jul 2015 07:16:09 -0600</pubDate>
         <link>http://colinmarshall.net/jekyll</link>

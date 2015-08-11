@@ -6400,7 +6400,7 @@ pre {
     -webkit-transform: rotate(0.1deg);
     -ms-transform: rotate(0.1deg);
     transform: rotate(0.1deg);
-    transition: transform 1s, height 2s, width 2s; }
+    transition: transform 1.3s, height 2s, width 2s; }
     .header__logo--flip {
       -webkit-transform: rotate(-359.9deg);
       -ms-transform: rotate(-359.9deg);

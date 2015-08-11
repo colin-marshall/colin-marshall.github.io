@@ -11,7 +11,7 @@
 
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700|Quicksand:400,700|Oswald:400,700|Merriweather:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="/css/main.css">
 	<link rel="canonical" href="http://colinmarshall.net/jekyll">
 	<link rel="alternate" type="application/rss+xml" title="Colin Marshall - Web Developer" href="http://colinmarshall.net/feed.xml" />
 </head>
@@ -19,9 +19,9 @@
 
   <body>
 
-    <header class="header">
+    <header class="header container-fluid">
 
-	<div class="wrapper">
+	<div class="row">
 
 		<a href="/">
 			<img src="/img/cm-logo-cutout.svg" class="header__logo" alt="Colin Marshall Web Development">
@@ -30,32 +30,12 @@
 		<h1 class="header__name">Colin Marshall</h1>
 		<h2 class="header__title">Web Developer</h2>
 
-		<!-- <a class="site-title" href="/">Colin Marshall - Web Developer</a> -->
+		<!-- <a class="site-title" href="">Colin Marshall - Web Developer</a> -->
 
 		
 
 	</div>
-<!-- 	<nav class="site-nav">
-		<a href="#" class="menu-icon">
-			<svg viewBox="0 0 18 15">
-				<path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-				<path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-				<path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-			</svg>
-		</a>
 
-		<div class="trigger">
-			
-			
-			<a class="page-link" href="/about/">About Me</a>
-			
-			
-			
-			
-			
-			
-		</div>
-	</nav> -->
 </header>
 
 
@@ -75,6 +55,25 @@
 <!--more--></p>
 
 <p>Since I already have something WordPress related that will be in my portfolio, I figured that I could kill two birds with one stone and create a blog that demonstrates my ability to use a different framework and add it to my portfolio.</p>
+
+<h2 id="jekyll-uses-markdown-syntax">Jekyll Uses Markdown Syntax</h2>
+
+<p>In <strong>WordPress</strong>, I find the Visual Editor to be a real pain, and I never use it. More often than not I end up with tags in the wrong places, or tags will randomly appear in the source that I never put there in the first place.</p>
+
+<p>The Text Editor in WordPress is a little better for me since I can control the HTML directly, but writing HTML in the Text Editor is nothing like writing HTML in an application like <a href="http://www.sublimetext.com/">Sublime Text</a>. Out-of-the-box,the WordPress Text Editor does not have syntax highlighting, and it doesn’t allow you to use tab indentation. Writing HTML without tab indentation is a pretty terrible experience that I recommend be avoided like the plague. Of course you could always use spaces in place of tabs, but that gets tedious to me.</p>
+
+<p>I have been using the <a href="http://daringfireball.net/projects/markdown/">Markdown</a> syntax for a couple years now on the <a href="https://teamtreehouse.com/forum/">Team Treehouse Forum</a>, and more recently on <a href="http://stackoverflow.com/">Stack Overflow</a>. I have found that <strong>Markdown</strong> lets me write more efficiently than raw HTML.</p>
+
+<h2 id="jekyll-sites-are-static">Jekyll Sites Are Static</h2>
+
+<h2 id="jekyll-forces-me-to-use-the-command-line">Jekyll Forces Me To Use The Command Line</h2>
+
+<p>My first introduction to the command line was when I was around 5 years old. My Dad taught me how to use MS-DOS to play games on our IBM desktop computer. So I have known how to use the command line about as long as I have known how to read and write. That being said, moving in and out of directories and executing programs was about the extent that I used the command line back then. As Windows evolved I used it less and less.</p>
+
+<p>Since I have been learning web development over the past few years I have started to use the command line again, and it has become the centerpiece of my development workflow. I now prefer to use CLI tools (e.g. <a href="https://git-scm.com/">Git</a>, <a href="http://gulpjs.com/">Gulp</a>, <a href="https://www.vagrantup.com/">Vagrant</a>, etc.) in place of GUI tools (e.g. CodeKit, Mixture, MAMP, etc.) because using the command line gives me a greater understanding of what’s going on “under the hood.” Jekyll uses the command line to build and serve your blog during development, so I was naturally attracted to it.</p>
+
+<h2 id="github-pages-work-great-with-jekyll">GitHub Pages Work Great With Jekyll</h2>
+
 
 	</article>
 
