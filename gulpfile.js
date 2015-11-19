@@ -1,21 +1,24 @@
 var gulp        = require('gulp');
 var browserSync = require('browser-sync');
 var cp          = require('child_process');
+var autoprefix  = require('autoprefixer');
 var bower       = require('gulp-bower');
 var sass        = require('gulp-sass');
 var deploy      = require('gulp-gh-pages');
+var maps        = require('gulp-sourcemaps');
+
 
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };
 
 var config = {
-     sassPaths: [
+    sassPaths: [
         './bower_components/bootstrap-sass/assets/stylesheets',
         '_sass'
     ],
-     bowerDir: './bower_components'
-}
+    bowerDir: './bower_components'
+};
 
 /**
  * Build the Sass
@@ -23,10 +26,12 @@ var config = {
 
 gulp.task('compileSass', function(){
     return gulp.src('css/main.scss')
+        .pipe(maps.init())
         .pipe(sass({
             includePaths: config.sassPaths
         })
             .on('error', sass.logError))
+        .pipe(maps.write('./'))
         .pipe(gulp.dest('_site/css'));
 });
 
@@ -61,9 +66,9 @@ gulp.task('browser-sync', ['jekyll-build'], function() {
 /**
  * Download Bower dependencies 
  */
-gulp.task('bower', function() { 
+gulp.task('bower', function() {
     return bower()
-         .pipe(gulp.dest(config.bowerDir)) 
+        .pipe(gulp.dest(config.bowerDir));
 });
 
 /**

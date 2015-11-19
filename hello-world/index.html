@@ -19,35 +19,51 @@
 
   <body>
 
-    <header class="header container-fluid">
+    <header class="container-fluid">
 
-	<div class="row">
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Colin Marshall | Web Developer</a>
+			</div>
 
-		<a href="/">
-			<img src="/img/cm-logo-cutout.svg" class="header__logo" alt="Colin Marshall Web Development">
-		</a>
-
-		<h1 class="header__name">Colin Marshall</h1>
-		<h2 class="header__title">Web Developer</h2>
-
-		<!-- <a class="site-title" href="">Colin Marshall - Web Developer</a> -->
-
-		
-
-	</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right social">
+	                <li><a href="#" class="facebook"><i class="fa fa-lg fa-facebook"></i></a></li>
+	                <li><a href="#" class="twitter"><i class="fa fa-lg fa-twitter"></i></a></li>
+	                <li><a href="#" class="google-plus"><i class="fa fa-lg fa-google-plus"></i></a></li>
+	                <li><a href="#" class="linkedin"><i class="fa fa-lg fa-linkedin"></i></a></li>
+	            </ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Portfolio</a></li>
+					<li><button type="button" class="btn btn-primary navbar-btn navbar-right" data-toggle="modal" data-target="#contactModal">Contact Me</button></li>
+				</ul>
+				
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
 
 </header>
 
 
     <div class="page-content">
-      <div class="wrapper">
         <div class="post">
 
 	<header class="post-header">
 		<h1 class="post-title">Hello, World! Welcome To My Blog</h1>
 		<p class="post-meta"><span class="author">Colin Marshall</span> • Jul 22, 2015</p>
 	</header>
+
 	
+
 	<article class="post-content">
 		
 <div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;hello, world&quot;</span><span class="p">);</span></code></pre></div>
@@ -56,9 +72,27 @@
 
 	</article>
 
-</div>
+	<section class="comments">
 
-      </div>
+	
+		<div id="disqus_thread"></div>
+		<script type="text/javascript">
+    	/* * * CONFIGURATION VARIABLES * * */
+    	var disqus_shortname = 'colinmarshallwebdev';
+    
+    	/* * * DON'T EDIT BELOW THIS LINE * * */
+    	(function() {
+        	var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        	dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    	})();
+		</script>
+		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+	
+	
+	</section>
+</div>
+    
     </div>
 
     <footer class="site-footer">
@@ -70,8 +104,7 @@
     <div class="footer-col-wrapper">
       <div class="footer-col  footer-col-1">
         <ul class="contact-list">
-          <li>Colin Marshall - Web Developer</li>
-          <li><a href="mailto:colin.michael.marshall@gmail.com">colin.michael.marshall@gmail.com</a></li>
+          <li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">Contact Me</button></li>
         </ul>
       </div>
 
@@ -93,7 +126,7 @@
 
           
           <li>
-            <a href="https://twitter.com/djcoma">
+            <a href="https://twitter.com/cmwebdev">
               <span class="icon  icon--twitter">
                 <svg viewBox="0 0 16 16">
                   <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
@@ -101,7 +134,7 @@
                 </svg>
               </span>
 
-              <span class="username">djcoma</span>
+              <span class="username">cmwebdev</span>
             </a>
           </li>
           
@@ -117,19 +150,71 @@
 
 </footer>
 
+<!-- Contact Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Contact Me</h4>
+      </div>
+      <div class="modal-body">
+        <form action="http://formspree.io/colin.michael.marshall@gmail.com" method="POST">
+
+        	<div class="form-group">
+        		<label for="name">Name</label>
+        		<input type="text" name="name" id="name" class="form-control" placeholder="Name">
+        	</div>
+        	
+        	<div class="form-group">
+        		<label for="exampleInputEmail1">Email address</label>
+        		<input type="email" name="email" id="email" class="form-control" placeholder="Email">
+        	</div>
+        	
+        	<div class="form-group">
+        		<label for="message">Message</label>
+        		<textarea name="message" id="message" class="form-control" placeholder="Message"></textarea>
+        	</div>
+
+        	<input type="submit" class="btn btn-primary" value="Send">
+        	<!-- <input type="hidden" name="_next" value="//site.io/thanks.html" /> -->
+        	<input type="text" name="_gotcha" style="display:none" />
+        	
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 <script>
 $(document).ready(function() {
-	$header_logo = $('.header__logo');
-	$header_name = $('.header__name');
-	$header_title = $('.header__title');
+	// $header_logo = $('.header__logo');
+	// $header_name = $('.header__name');
+	// $header_title = $('.header__title');
 	
-	$header_logo.fadeIn(3000).addClass('header__logo--flip');
-	$header_name.delay(2400).fadeIn(1000);
-	$header_title.delay(3000).fadeIn(1000);
+	// $header_logo.fadeIn(3000).addClass('header__logo--flip');
+	// $header_name.delay(2400).fadeIn(1000);
+	// $header_title.delay(3000).fadeIn(1000);
+
+    // $iFacebook = $('.fa-facebook');
+    // $aFacebook = $('a.facebook');
+    // $aFacebook.hover(function(e) {
+    //     e.preventDefault();
+    //     $iFacebook.animate({
+    //         color:'#4060A5'
+    //     },'slow');
+    // }, function(e) {
+    //     //e.preventDefault();
+    //     $iFacebook.css('color', '#777');
+    // });
 });
 </script>
+
+
 
   </body>
 
